@@ -30,3 +30,73 @@
 .iconclass__ ul li div a p{
     color: aliceblue;
 }
+
+.latest-news-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+}
+
+.news-tab {
+    display: flex;
+    list-style-type: none;
+    border-bottom: 1px solid rgb(227, 227, 227);
+    width: 100%;
+    /* justify-content: center; */
+    /* align-items: center; */
+    padding: 0 10% 0 10%;
+}
+.news-tab > li {
+    text-align: center;
+    display: flex;
+    padding: 1rem;
+}
+
+.news-tab > li:not(:last-child) {
+    border-right: 1px solid rgb(227, 227, 227);
+}
+
+.articles-tab {
+    list-style-type: none;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    width: 80%;
+    gap: 1rem;
+}
+
+.article {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    /* border: 1px solid #000; */
+    margin-bottom: 10%;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px #dedede;
+}
+
+.article > img {
+    width: 100%;
+}
+
+.article-info {
+    display: flex;
+    gap: .5rem;
+    font-size: small;
+}
+
+.article-source {
+    color: red;
+}
+
+.article-title {
+    font-weight: bold;
+}
+
+.article-info, .article-title, .article-content {
+    padding: .5rem .5rem 0 .5rem;
+}
+
+.more-details-button {
+    padding: .5rem 1rem;
+}

@@ -1,0 +1,94 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background-color: #181a1b;
+    border-color: #736b5e;
+    height: 100%;
+    width: 100%;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    justify-content: flex-start;
+    background-color: #34393f;
+    padding: 10px 20px;
+    width: 100%;
+    
+}
+
+.navbarFirst {
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-end;
+    background-color: #191a1b;
+    padding: 5px 0px;
+    width: 100%;
+}
+
+h1 {
+    font-weight: 600px;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-left: 40px;
+   
+}
+
+.nav-item a {
+    color: #c4a6a6;
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    color: white;
+}
+
+.nav-item .dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #78828b;
+    padding: 10px;
+    margin: 0;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li {
+    margin: 12px;
+}
+
+.dropdown-menu li a {
+    color: whitesmoke;
+    display: block;
+    padding: 5px 10px;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #495057;
+}
+
+.icon-container {
+    display: flex;
+    gap: 2rem;
+}
+
+.hero{
+    display: flex;
+    height: 100%;  
+    width: 100%;  
+}
+
+.hero img{
+    width: inherit
+}

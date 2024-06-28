@@ -31,6 +31,8 @@
     color: aliceblue;
 }
 
+/* inizio branch nicolas */
+
 .latest-news-tab {
     display: flex;
     flex-direction: column;
@@ -43,25 +45,31 @@
     list-style-type: none;
     border-bottom: 1px solid rgb(227, 227, 227);
     width: 100%;
-    /* justify-content: center; */
-    /* align-items: center; */
+    justify-content: center; 
+    align-items: center; 
     padding: 0 10% 0 10%;
 }
+
 .news-tab > li {
     text-align: center;
     display: flex;
-    padding: 1rem;
+    padding: 1rem 0;
 }
 
-.news-tab > li:not(:last-child) {
-    border-right: 1px solid rgb(227, 227, 227);
+.news-tab li p {
+    border-right: 1px solid rgb(140, 140, 140);
+    padding: 0 1rem; 
+}
+
+.news-tab li:last-child p {
+    border-right: none;
 }
 
 .articles-tab {
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    width: 80%;
+    width: 60%;
     gap: 1rem;
 }
 
@@ -69,7 +77,6 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    /* border: 1px solid #000; */
     margin-bottom: 10%;
     overflow: hidden;
     box-shadow: 5px 5px 5px #dedede;
@@ -100,3 +107,4 @@
 .more-details-button {
     padding: .5rem 1rem;
 }
+/* fine branch nicolas */

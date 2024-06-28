@@ -69,11 +69,15 @@
     cursor: pointer;
 }
 
+.news-tab li button.active {
+    background-color: rgb(98, 96, 96);
+}
+
 .news-tab li:last-child button {
     border-right: none;
 }
 
-.articles-tab {
+.tabcontent {
     list-style-type: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -90,11 +94,11 @@
     box-shadow: 5px 5px 5px #dedede;
 }
 
-.articles-tab li {
+.tabcontent li {
     transition: margin-bottom 1s, margin-top 1s;
 }
 
-.articles-tab li:hover {
+.tabcontent li:hover {
     margin-bottom: 10px;
     margin-top: -10px;
 }

@@ -54,8 +54,16 @@
       <!-- Barra di navigazione tra le notizie di vari topic -->
       <!-- Topics -->
       <ul class="news-tab">
-        <li><button>Notizie EA</button></li>
-        <li><button>EA SPORTS FC</button></li>
+        <li>
+          <button class="tablinks" onclick="openCity(event, 'notizie-ea')">
+            Notizie EA
+          </button>
+        </li>
+        <li>
+          <button class="tablinks" onclick="openCity(event, 'ea-sports-fc')">
+            EA SPORTS FC
+          </button>
+        </li>
         <li><button>Apex Legends</button></li>
         <li><button>The Sims 4</button></li>
         <li><button>Star Wars</button></li>
@@ -65,7 +73,7 @@
       </ul>
       <!-- Blocco dei vari articoli -->
       <!-- Tab Notizie EA -->
-      <ul id="notizie-ea" class="articles-tab">
+      <ul id="notizie-ea" class="tabcontent">
         <li>
           <div class="article">
             <img
@@ -188,7 +196,7 @@
         </li>
       </ul>
       <!-- Tab EA SPORTS FC -->
-      <ul id="ea-sports-fc" class="articles-tab">
+      <ul id="ea-sports-fc" class="tabcontent">
         <li>
           <div class="article">
             <img

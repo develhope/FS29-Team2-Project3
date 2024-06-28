@@ -56,12 +56,20 @@
     padding: 1rem 0;
 }
 
-.news-tab li p {
-    border-right: 1px solid rgb(140, 140, 140);
-    padding: 0 1rem; 
+.news-tab > li:hover {
+    background-color: rgb(228, 228, 228);
 }
 
-.news-tab li:last-child p {
+.news-tab li button {
+    border: none;
+    border-right: 1px solid rgb(140, 140, 140);
+    padding: 0 1rem;
+    outline: none;
+    background-color: inherit;
+    cursor: pointer;
+}
+
+.news-tab li:last-child button {
     border-right: none;
 }
 
@@ -80,6 +88,15 @@
     margin-bottom: 10%;
     overflow: hidden;
     box-shadow: 5px 5px 5px #dedede;
+}
+
+.articles-tab li {
+    transition: margin-bottom 1s, margin-top 1s;
+}
+
+.articles-tab li:hover {
+    margin-bottom: 10px;
+    margin-top: -10px;
 }
 
 .article > img {
@@ -106,5 +123,12 @@
 
 .more-details-button {
     padding: .5rem 1rem;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: padding 1s;
+}
+
+.more-details-button:hover {
+    padding: .8rem 1.5rem;
 }
 /* fine branch nicolas */

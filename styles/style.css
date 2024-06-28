@@ -72,6 +72,7 @@
 
 .news-tab li button.active {
     background-color: rgb(98, 96, 96);
+    border-bottom: 1px solid red;
 }
 
 .news-tab button p {

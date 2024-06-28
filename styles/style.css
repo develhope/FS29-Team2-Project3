@@ -71,6 +71,7 @@
 
 .news-tab li button.active {
     background-color: rgb(98, 96, 96);
+    border-bottom: 1px solid red;
 }
 
 .news-tab li:last-child button {
@@ -79,7 +80,7 @@
 
 .tabcontent {
     list-style-type: none;
-    display: grid;
+    display: none;
     grid-template-columns: repeat(3, 1fr);
     width: 60%;
     gap: 1rem;

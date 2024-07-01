@@ -70,11 +70,6 @@
     transition: border-bottom 1s;
 }
 
-.news-tab li button.active {
-    background-color: rgb(98, 96, 96);
-    border-bottom: 1px solid red;
-}
-
 .news-tab button p {
     border-right: 1px solid rgb(140, 140, 140);
     padding: 0 1rem;
@@ -84,8 +79,24 @@
     background-color: rgb(228, 228, 228);
 }
 
-.news-tab button:last-child p {
+.news-tab li:last-child button {
     border-right: none;
+}
+
+.selected-tab {
+    align-self: center;
+    background-color: red;
+    width: 0;
+    height: 2px;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 0;
+    transition: width .5s;
+    margin: 0 10%;
+}
+
+.news-tab button.active .selected-tab {
+    width: 80%;
 }
 
 .articles-tab {

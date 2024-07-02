@@ -21,7 +21,7 @@
 
 .games-list{
     background-color:white;
-    margin-top: 30px;
+    margin-top: 40px;
     list-style: none;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
@@ -107,7 +107,6 @@
     background-color: white;
     border: 2px solid black;
     align-content: center;
-    margin-bottom: 30px;
     cursor: pointer;
 }
 
@@ -119,4 +118,25 @@
 .latest-games:hover{
     background-color: white;
     transform: scale(1.16);
+}
+
+.logo{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 46%;
+}
+
+.logo2{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 40%;
+}
+
+.logo3{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 30%;
 }

@@ -73,7 +73,7 @@
     position: absolute;
     right: 0;
     top: 0;
-    z-index: 1;
+    z-index:1;
 }
 
 .games-list li:hover img{
@@ -122,24 +122,75 @@
 
 .logo{
     display: flex;
+    margin-bottom: 46%;
     justify-content: center;
     align-content: center;
-    margin-top: 46%;
     position: relative;
-}
+    overflow:hidden;
+    height: 60%;
+    width: 100%;
+    }
 
+.logo:hover img{
+    bottom:0;
+    margin-bottom: 40px;
+    }
+.logo img{
+    align-self: flex-end;
+    position:relative;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+    }
+    
 .logo2{
     display: flex;
+    margin-bottom: 46%;
     justify-content: center;
     align-content: center;
-    margin-top: 40%;
+    position: relative;
+    overflow:hidden;
+    height: 58%;
+    width: 100%;
 }
 
 .logo3{
     display: flex;
+    margin-bottom: 46%;
     justify-content: center;
     align-content: center;
-    margin-top: 30%;
+    position: relative;
+    overflow:hidden;
+    height: 58%;
+    width: 100%;
 }
 
+.logo2:hover img{
+    bottom:0;
+    margin-bottom: 40px;
+ }
+ .logo2 img{
+    align-self: flex-end;
+    position:relative;
+    -webkit-transition: all 0.8s ease;
+    -moz-transition: all 0.8s ease;
+    -o-transition: all 0.8s ease;
+    -ms-transition: all 0.8s ease;
+    transition: all 0.8s ease;
+ }
 
+ .logo3:hover img{
+    bottom:0;
+    margin-bottom: 40px;
+ }
+ .logo3 img{
+     align-self: flex-end;
+     position:relative;
+     -webkit-transition: all 0.8s ease;
+     -moz-transition: all 0.8s ease;
+     -o-transition: all 0.8s ease;
+     -ms-transition: all 0.8s ease;
+     transition: all 0.8s ease;
+ }

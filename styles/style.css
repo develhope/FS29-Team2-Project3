@@ -79,7 +79,7 @@
     background-color: rgb(228, 228, 228);
 }
 
-.news-tab li:last-child button {
+.news-tab button:last-child p {
     border-right: none;
 }
 
@@ -99,7 +99,7 @@
     width: 80%;
 }
 
-.articles-tab {
+.tabcontent {
     list-style-type: none;
     display: none;
     grid-template-columns: repeat(3, 1fr);

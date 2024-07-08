@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    font-size: large;
+    font-weight: bolder;
+}
+
+.container {
+    display: flex;
+    background-color: #1c2022;
+    border-color: #736b5e;
+    width: 100%;
+    flex-direction: column;
+}
+
+.more-options {
+    height: 100%;
+    color: orange;
+    font-size: xx-large;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    background-color: #34393f;
+    color: rgb(240, 248, 255);
+    padding: 10px 20px;
+    width: 100%;
+}
+
+.navbarFirst {
+    display: flex;
+    justify-content: flex-end;
+    background-color: #313436;
+    padding: 5px 20px;
+    width: 100%;
+}
+
+h1 {
+    font-weight: 600px;
+}
+
+.navbar-nav {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+.nav-item {
+    margin-left: 40px;
+    position: relative;
+}
+
+.nav-item a {
+    text-decoration: none;
+}
+
+.nav-item a:hover {
+    color: white;
+}
+
+.nav-item .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    opacity: 70%;
+    background-color: #2e3132;
+    padding: 10px;
+    z-index: 10;
+}
+
+.nav-item:hover .dropdown-menu {
+    display: flex;
+    gap: 2rem;
+
+}
+
+.dropdown-menu li {
+    list-style: none;
+    margin: 5px 0;
+    width: fit-content;
+    height: fit-content;
+    font-size: small;
+}
+
+.dropdown-menu li a {
+    color: rgb(255, 255, 255);
+    display: block;
+    font-size: small;
+    cursor: pointer;
+}
+.dropdown a:hover{
+    color: #b74b1c;
+}
+
+.containerEsperienze .dropdown-menu {
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: rgb(240, 248, 255);
+}
+
+
+.exploregames {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    list-style: none;
+    height: 50%;
+}
+
+.exploregames li {
+    font-size: small;
+
+}
+
+.exploregames a:hover {
+    color: #b74b1c;
+}
+
+a {
+    color: rgb(255, 255, 255);
+}
+
+
+.icon-container {
+    display: flex;
+    gap: 2rem;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+}
+
+.hero {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+
+.hero img {
+    height: 100%;
+    width: 100%;
+}
+
+.overimg {
+    height: 30%;
+    width: 30%;
+    margin-top: 7%;
+    margin-left: 10%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.veil-guard {
+    position: absolute;
+    top: 105%;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    text-align: center;
+}
+
+.veil-guard button {
+    font-size: 1rem;
+    font-weight:200;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    cursor: pointer;
+    padding: 16px 24px;
+    border: none;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(10, 253, 30, 0.7);
+}
+
+.more-options {
+    margin-right: 40px;
+}
+
+.ea-links{
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    height: 100%;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+
+    /* background-color:aquamarine; */
+}
+
+.ea-links img{
+    /* position: absolute; */
+    height: 100px;
+    width: 100%;
+}
+
+h2{
+    margin-right: 50%;
+    font-size: 1.5rem;
+    font-weight:200;
+    color: aliceblue;
+    position: absolute;
+}
+
+.buttonEALinks{
+    
+    cursor: pointer;
+    padding: 25px 35px;
+    border: none;
+    border-radius: 50px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(10, 253, 30, 0.7);
+    position: absolute;
+    align-self: flex-end;
+    margin-right: 17%;
+    font-size: small;
+}

@@ -99,28 +99,6 @@
     z-index: 1;
 }
 
-.latest-games{
-    padding: 15px;
-    height: 50px;
-    width: 150px;
-    display: flex;
-    justify-content: center;
-    background-color: white;
-    border: 2px solid black;
-    align-content: center;
-    cursor: pointer;
-}
-
-.latest-games a{
-    color: black;
-    text-decoration: none;
-}
-
-.latest-games:hover{
-    background-color: white;
-    transform: scale(1.16);
-}
-
 .logo{
     display: flex;
     margin-bottom: 46%;
@@ -162,5 +140,20 @@
 
 .games-list li:hover .logo img{
     opacity: 1;
+}
+
+.button{
+    cursor: pointer;
+    padding: 15px;
+    background-color: white;
+}
+
+.button a{
+    text-decoration: none;
+    color: black;
+}
+
+.button:hover{
+    transform: scale(1.16);
 }
 

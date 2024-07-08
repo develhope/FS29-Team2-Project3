@@ -92,7 +92,7 @@
 
 .games-list li{
     position: relative;
-    background: linear-gradient(.25turn, blue, 30%, tomato);
+    background: linear-gradient(.25turn, #0c0c54, 50%, rgb(255, 72, 40));
     display: flex;
     justify-content: center;
     align-content: center;
@@ -134,7 +134,7 @@
 
 .games-list li:hover .logo img {
     bottom:0;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
  }
 
 .logo img{
@@ -147,4 +147,20 @@
     -ms-transition: all 0.8s ease;
     transition: all 0.8s ease;
     }
-    
+
+.website{
+    position: absolute;
+    color: white;
+    text-decoration: none;
+    bottom: 0;
+    display: none;
+}
+
+.games-list li:hover .logo .website{
+    display: block;
+} 
+
+.games-list li:hover .logo img{
+    opacity: 1;
+}
+

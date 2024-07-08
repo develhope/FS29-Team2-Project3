@@ -227,3 +227,171 @@ h2{
     margin-right: 17%;
     font-size: small;
 }
+
+/* inizio branch nicolas */
+
+.latest-news-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    gap: 2rem;
+}
+
+.news-tab {
+    display: flex;
+    list-style-type: none;
+    border-bottom: 1px solid rgb(227, 227, 227);
+    width: 100%;
+    justify-content: start; 
+    align-items: center;
+    padding-left: 15%;
+    /* margin: 0 100px;  */
+    /* padding: 0 10%; */
+}
+
+.news-tab > button:hover {
+    background-color: rgb(228, 228, 228);
+}
+
+.news-tab button {
+    text-align: center;
+    display: flex;
+    padding: 1rem 0;
+    position: relative;
+    justify-content: space-between;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    cursor: pointer;
+    transition: border-bottom 1s;
+}
+
+.news-tab button p {
+    border-right: 1px solid rgb(140, 140, 140);
+    padding: 0 1rem;
+}
+
+.news-tab button.active {
+    background-color: rgb(228, 228, 228);
+}
+
+.news-tab button:last-child p {
+    border-right: none;
+}
+
+.selected-tab {
+    align-self: center;
+    background-color: red;
+    width: 0;
+    height: 2px;
+    align-self: flex-end;
+    position: absolute;
+    bottom: 0;
+    transition: width .5s;
+    margin: 0 10%;
+}
+
+.news-tab button.active .selected-tab {
+    width: 80%;
+}
+
+.tabcontent {
+    list-style-type: none;
+    display: none;
+    grid-template-columns: repeat(3, 1fr);
+    width: 70%;
+    /* margin: 0 10%; */
+    gap: 1rem;
+}
+
+.article {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10%;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px #dedede;
+    cursor: pointer;
+}
+
+.tabcontent li {
+    transition: margin-bottom 1s, margin-top 1s;
+}
+
+.tabcontent li:hover {
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+.article > img {
+    width: 100%;
+}
+
+.article-info {
+    display: flex;
+    gap: .5rem;
+    font-size: small;
+}
+
+.article-source {
+    color: red;
+}
+
+.article-title {
+    font-weight: bold;
+}
+
+.article-info, .article-title, .article-content {
+    padding: .5rem .5rem 0 .5rem;
+}
+
+.more-details-button {
+    padding: .5rem 1rem;
+    background-color: #fff;
+    border-radius: 3px;
+    transition: padding 1s;
+}
+
+.more-details-button:hover {
+    padding: .8rem 1.5rem;
+    cursor: pointer;
+}
+
+
+/* media query */
+
+@media screen and (max-width: 1024px) {
+    .tabcontent {
+        grid-template-columns: repeat(2, 1fr);
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .tabcontent {
+        grid-template-columns: repeat(1, 1fr);
+        width: 80%;
+    }
+
+    .article {
+        margin-bottom: 0;
+        padding: 1rem;
+    }
+
+    .article img {
+        display: none;
+    }
+
+    .article-info {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+
+    .article-content {
+        display: none;
+    }
+}
+
+/* fine branch nicolas */

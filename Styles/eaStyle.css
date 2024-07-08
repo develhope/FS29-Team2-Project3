@@ -92,7 +92,7 @@
 
 .games-list li{
     position: relative;
-    background-color: tomato;
+    background: linear-gradient(.25turn, blue, 30%, tomato);
     display: flex;
     justify-content: center;
     align-content: center;
@@ -136,11 +136,6 @@
     bottom:0;
     margin-bottom: 60px;
  }
-
-/*.logo:hover img{
-    bottom:0;
-    margin-bottom: 60px;
-    }*/
 
 .logo img{
     margin-bottom: 10px;

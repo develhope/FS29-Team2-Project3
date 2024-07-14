@@ -20,3 +20,15 @@ function openCity(event, tabName) {
 }
 
 document.getElementById("defaultOpen").click();
+
+const leftScrollButton = document.querySelector(".scroll-left");
+const rightScrollButton = document.querySelector(".scroll-right");
+const newsTab = document.querySelector(".news-tab");
+
+leftScrollButton.addEventListener("click", () => {
+  newsTab.scrollLeft += 200;
+});
+
+rightScrollButton.addEventListener("click", () => {
+  newsTab.scrollLeft -= 200;
+});

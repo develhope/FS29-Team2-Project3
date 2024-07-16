@@ -521,6 +521,10 @@ h2{
         grid-template-columns: repeat(2, 1fr);
         width: 80%;
     }
+
+    .games-list{
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -546,6 +550,10 @@ h2{
 
     .article-content {
         display: none;
+    }
+
+    .games-list{
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 

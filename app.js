@@ -44,14 +44,14 @@ function checkScrollButton() {
   const maxScrollLeft = newsTab.scrollWidth - newsTab.clientWidth;
 
   if (newsTab.scrollLeft <= 0) {
-    // Hide left button if at the beginning
+    // Applica hidden al right button se all'inizio del menu
     rightScrollButton.classList.add("hidden");
   } else {
     rightScrollButton.classList.remove("hidden");
   }
 
   if (newsTab.scrollLeft >= newsTab.scrollWidth - newsTab.clientWidth) {
-    // Hide right button if at the end
+    // Applica hidden al left button se alla fine del menu
     leftScrollButton.classList.add("hidden");
   } else {
     leftScrollButton.classList.remove("hidden");

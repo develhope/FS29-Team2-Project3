@@ -304,7 +304,6 @@ h2{
 .games-list li:hover img{
     opacity: 0.5;
     transform: scale(1.2);
-    position: absolute;
 }
 
 .games-list li img:hover::before,
@@ -564,6 +563,9 @@ h2{
 /* media query */
 
 @media screen and (max-width: 1024px) {
+    .nav-item {
+        display: none;
+    }
     .tabcontent {
         grid-template-columns: repeat(2, 1fr);
         width: 80%;
@@ -575,6 +577,10 @@ h2{
 }
 
 @media screen and (max-width: 767px) {
+
+    .nav-item {
+        display: none;
+    }
     .tabcontent {
         grid-template-columns: repeat(1, 1fr);
         width: 80%;
